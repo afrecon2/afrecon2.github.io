@@ -43,6 +43,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
 
@@ -146,12 +147,10 @@
     <h2 class="title">Scannet Test Split Reconstruction Videos</h2>
     <p>ul: input image, ur: rendered depth<br>
        ll: first-person view reconstruction, lr: birdeye-view reconstruction</p>
-
-    <script> 
-    $(function(){
-      $("#DivContent").load("videos.html"); 
-    });
-    </script> 
+       <div w3-include-html="videos.html"></div> 
+        <script>
+            w3IncludeHTML();
+        </script>
 
   </div>
 </section>
