@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>AF-Recon</title>
+  <title>Point-Recon</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -57,69 +57,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">AF-Recon: Online Auto-focusing Point-based 3D Reconstruction</h1>
+            <h1 class="title is-1 publication-title">PointRecon: Online 3D Point Cloud Reconstruction via Ray-based 2D-3D Matching</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
+              Anonymously submitted to ICLR 2025
           </div>
         </div>
       </div>
@@ -136,7 +77,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          We propose a novel online point-based 3D reconstruction method from a posed monocular RGB video. Our model maintains a global point cloud scene representation but allows points to adjust their 3D locations along the camera rays they were initially observed. When a new RGB image is inputted, the model adjusts the location of the existing points, expands the point cloud with newly observed points, and removes redundant points. These flexible updates are achieved through our novel ray-based image-scene matching technique. Our point-based representation does not require a pre-defined voxel size and can adapt to any resolution. A unified global representation also ensures consistency from different views. Unlike past point-based reconstruction methods, our model is the first to accomplish scene-level reconstruction while requiring no per-scene optimization. Results on the ScanNet dataset show that we improve over previous online methods and match the state-of-the-art performance with other types of approaches.
+          We propose a novel online point-based 3D reconstruction method from a posed monocular RGB video. 
+          Our model maintains a global point cloud scene representation but allows points to adjust their 3D 
+          locations along the camera rays they were initially observed. When a new RGB image is inputted, 
+          the model adjusts the location of the existing points, expands the point cloud with newly observed 
+          points, and removes redundant points. These flexible updates are achieved through our novel ray-based 
+          2D-3D matching technique. Our point-based representation does not require a pre-defined voxel size and 
+          can adapt to any resolution. A unified global representation also ensures consistency from different views.
+          Results on the ScanNet dataset show that we improve over previous online methods and match the 
+          state-of-the-art performance with other types of approaches. 
           </p>
         </div>
       </div>
@@ -185,17 +134,7 @@
 </section>
 <!-- End recon video -->
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+ <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
