@@ -1,10 +1,10 @@
 import glob
 
-temp = "    <div class=\"container is-centered\" id=\"scene0707_00\">\n      <video id=\"scene0707_00\" controls muted height=\"100%\">\n        <source src=\"https://github.com/afrecon2/afrecon2.github.io/raw/master/static/videos/scene0707_00.mp4\"\n        type=\"video/mp4\">\n      </video>\n      <h4 class=\"subtitle has-text-centered\">\n              scene0707_00\n      </h4>\n    </div>\n"
+temp = "    <div class=\"container is-centered\" id=\"scene0707_00\">\n      <video id=\"scene0707_00\" controls muted height=\"100%\">\n        <source src=\"https://huggingface.co/afrecon/pointrecon_stuff/resolve/main/videos/scene0707_00.mp4\"\n        type=\"video/mp4\">\n      </video>\n      <h4 class=\"subtitle has-text-centered\">\n              scene0707_00\n      </h4>\n    </div>\n"
 
 print(temp)
 
-scenes = glob.glob("static/videos/*mp4")
+scenes = glob.glob("pointrecon_stuff/videos/*mp4")
 scenes = sorted(scenes)
 text = ""
 for scene in scenes:
