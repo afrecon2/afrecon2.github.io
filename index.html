@@ -57,10 +57,10 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PointRecon: Online 3D Point Cloud Reconstruction via Ray-based 2D-3D Matching</h1>
+            <h1 class="title is-1 publication-title">PointRecon: Online Point-based 3D Reconstruction via Ray-based 2D-3D Matching</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              Anonymously submitted to ICLR 2025
+              Anonymously submitted to CVPR 2025
           </div>
         </div>
       </div>
@@ -77,15 +77,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          We propose a novel online point-based 3D reconstruction method from a posed monocular RGB video. 
-          Our model maintains a global point cloud scene representation but allows points to adjust their 3D 
-          locations along the camera rays they were initially observed. When a new RGB image is inputted, 
-          the model adjusts the location of the existing points, expands the point cloud with newly observed 
-          points, and removes redundant points. These flexible updates are achieved through our novel ray-based 
-          2D-3D matching technique. Our point-based representation does not require a pre-defined voxel size and 
-          can adapt to any resolution. A unified global representation also ensures consistency from different views.
-          Results on the ScanNet dataset show that we improve over previous online methods and match the 
-          state-of-the-art performance with other types of approaches. 
+            We propose a novel online, point-based 3D reconstruction method from posed monocular RGB videos. Our model maintains a global point cloud representation of the scene, continuously updating the features and 3D locations of points as new images are observed. It expands the point cloud with newly detected points while carefully removing redundancies. The point cloud updates and the depth predictions for new points are achieved through a novel ray-based 2D-3D feature matching technique, which is robust against errors in previous point position predictions. In contrast to offline methods, our approach processes infinite-length sequences and provides real-time updates. Additionally, the point cloud imposes no pre-defined resolution or scene size constraints, and its unified global representation ensures view consistency across perspectives. Experiments on the ScanNet dataset show that our method achieves state-of-the-art quality among online MVS approaches. 
           </p>
         </div>
       </div>
@@ -93,6 +85,21 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+
+<!-- Recon video-->
+<section class="section is-small is-light" id="recon">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Scannet Test Split Reconstruction Videos</h2>
+    <p>ul: input image, ur: rendered depth<br>
+       ll: first-person view reconstruction, lr: birdeye-view reconstruction</p>
+
+       <div id="DivContent"></div>
+
+  </div>
+</section>
+<!-- End recon video -->
+
 
 <!-- Mesh carousel -->
 <section class="section is-small">
@@ -120,19 +127,6 @@
 </div>
 </section>
 <!-- End mesh carousel -->
-
-<!-- Recon video-->
-<section class="section is-small is-light" id="recon">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Scannet Test Split Reconstruction Videos</h2>
-    <p>ul: input image, ur: rendered depth<br>
-       ll: first-person view reconstruction, lr: birdeye-view reconstruction</p>
-
-       <div id="DivContent"></div>
-
-  </div>
-</section>
-<!-- End recon video -->
 
  <footer class="footer">
   <div class="container">
